@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bahril-maulana.github.io/Bahril.dev-portofolio/sitemap.xml

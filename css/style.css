@@ -24,6 +24,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, .font-display {
@@ -100,6 +101,7 @@ h1, h2, h3, h4, .font-display {
   padding-top: 6rem;
   position: relative;
   overflow: hidden;
+  max-width: 100%;
 }
 #home::before {
   content: '';
@@ -688,12 +690,83 @@ footer p { font-size: 0.78rem; color: rgba(255, 255, 255, 0.25); }
 .reveal-delay-3 { transition-delay: 0.3s; }
 
 /* ─── RESPONSIVE ─── */
-@media (max-width: 991px) {
-  .hero-photo-wrap { margin-top: 3rem; }
-  .hero-photo-frame { width: 300px; height: 360px; }
+/* Desktop/Laptop (1200px ke atas) - Tampilkan semua */
+@media (max-width: 1199px) {
   .deco-1, .deco-2 { display: none; }
 }
-@media (max-width: 768px) {
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .hero-photo-wrap { display: none; }
+  .hero-content { max-width: 100%; }
   section { padding: 5rem 0; }
   .step-connector { display: none; }
 }
+
+/* Tablet Kecil & Smartphone Besar (576px - 767px) */
+@media (max-width: 767px) {
+  section { padding: 4rem 0; }
+  .hero-title {
+    font-size: clamp(3rem, 6vw, 3rem);
+  }
+  .hero-sub {
+    font-size: 1.2rem;
+  }
+  .about-text p {
+    font-size: 0.88rem;
+  }
+  .portfolio-img {
+    height: 180px;
+  }
+  .service-card {
+    padding: 1.5rem 1.5rem 1.3rem;
+  }
+  .workflow-step {
+    padding: 1.8rem 1.5rem;
+  }
+}
+
+/* Smartphone (< 576px) */
+@media (max-width: 575px) {
+  section { padding: 3rem 0; }
+  .hero-title {
+    font-size: clamp(3rem, 5vw, 2rem);
+  }
+  .hero-sub {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .hero-ctas {
+    flex-direction: column;
+  }
+  .hero-ctas > a {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .step-connector { display: none; }
+}
+
+/* Extra Small Devices (< 480px) */
+@media (max-width: 479px) {
+  .container {
+    max-width: 100% !important;
+    padding: 0 1rem;
+  }
+  section { padding: 2.5rem 0; }
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .section-title-main {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+  }
+  .portfolio-img {
+    height: 150px;
+  }
+  .skill-pill {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
