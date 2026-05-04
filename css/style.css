@@ -436,6 +436,7 @@ section { padding: 7rem 0; }
   white-space: nowrap;
   transition: color 0.2s;
   flex-shrink: 0;
+  padding-top: 8px;
 }
 .btn-demo-sm:hover { color: var(--steel-dark); }
 
