@@ -261,7 +261,7 @@ h1, h2, h3, h4, .font-display {
 section { padding: 7rem 0; }
 
 .section-eyebrow {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -276,7 +276,7 @@ section { padding: 7rem 0; }
 }
 
 .section-title-main {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 700;
   letter-spacing: -1px;
   line-height: 1.15;
@@ -292,7 +292,7 @@ section { padding: 7rem 0; }
 .about-text p {
   color: rgba(255, 255, 255, 0.55);
   line-height: 1.85;
-  font-size: 0.95rem;
+  font-size: 0.99rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -355,7 +355,8 @@ section { padding: 7rem 0; }
 .portfolio-img {
   position: relative;
   overflow: hidden;
-  height: 220px;
+ 
+  height: 250px;
 }
 .portfolio-placeholder {
   width: 100%; height: 100%;
@@ -367,8 +368,8 @@ section { padding: 7rem 0; }
 .portfolio-placeholder img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
-  object-fit: cover;
   display: block;
+  /* transform: scale(0.85); */
 }
 .placeholder-emoji { font-size: 2.8rem; }
 .placeholder-hint {
@@ -717,7 +718,7 @@ footer p { font-size: 0.78rem; color: rgba(255, 255, 255, 0.25); }
     font-size: 0.88rem;
   }
   .portfolio-img {
-    height: 180px;
+    height: 250px;
   }
   .service-card {
     padding: 1.5rem 1.5rem 1.3rem;
@@ -763,7 +764,7 @@ footer p { font-size: 0.78rem; color: rgba(255, 255, 255, 0.25); }
     font-size: clamp(1.5rem, 4vw, 1.8rem);
   }
   .portfolio-img {
-    height: 150px;
+    height: 250px;
   }
   .skill-pill {
     font-size: 0.7rem;
